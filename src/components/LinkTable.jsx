@@ -17,7 +17,7 @@ const LinkTable = ({ links, onDelete, onRefresh }) => {
     const url = `${window.location.protocol}//${window.location.host}/${shortCode}`; // Assuming redirect is handled by backend on same domain or configured otherwise. 
     // Actually, for development, backend is on 5000, frontend on 5173. 
     // The redirect URL should point to the backend.
-    const backendUrl = `http://localhost:5000/${shortCode}`;
+    const backendUrl = `https://bitly-backend-w3in.onrender.com/${shortCode}`;
     
     navigator.clipboard.writeText(backendUrl);
     setCopiedId(shortCode);
@@ -98,7 +98,7 @@ const LinkTable = ({ links, onDelete, onRefresh }) => {
                     <BarChart2 className="h-5 w-5" />
                   </Link>
                   <a
-                    href={`http://localhost:5000/${link.shortCode}`}
+                    href={`https://bitly-backend-w3in.onrender.com/${link.shortCode}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-gray-600"
