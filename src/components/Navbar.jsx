@@ -15,7 +15,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             <a
-              href="https://github.com"
+              href="https://github.com/rishibalanagu0108/Bitly_Frontend"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
